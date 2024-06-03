@@ -1,6 +1,87 @@
+.img-link {
+  position: fixed; /* Cambiamos a posición fija para que se mantenga en su lugar mientras se desplaza la página */
+  top: 0.5rem;
+  left: 0;
+}
+
 .img-link a img {
-    max-width: 8%;
-    height: auto;
-    display: block;
-  }
+  max-width: 7%;
+  height: auto;
+  display: block;
+  margin: 0; /* Eliminamos el margen para que el logo esté pegado al borde izquierdo */
+}
+
+/* Estilos para el contenedor del logo */
+.logo-container {
+  text-align: center;
+  margin-bottom: 10px; /* Espacio entre el logo y el header */
+}
+
+/* Estilos para el componente Header */
+header {
+  display: flex;
+  justify-content: center; /* Centrar los elementos del header */
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #ffffff;
+}
+
+.desplegable {
+  display: flex;
+  position: fixed;
+  left: 0;
+  top: 2rem;
+  gap: 20px;
   
+}
+
+/* Estilos para el componente Desplegable */
+.desplegable-container {
+  position: relative;
+  
+}
+
+.desplegable-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 16px;
+  color: #333333;
+  position: relative;
+}
+
+.desplegable-button::after {
+  content: '▼';
+  margin-left: 5px;
+  font-size: 12px;
+  color: #ffa500; /* Color del icono desplegable */
+}
+
+.desplegable-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  width: 200px;
+  z-index: 1;
+  display: none; /* Inicialmente oculto */
+}
+
+.desplegable-container:hover .desplegable-menu {
+  display: block; /* Mostrar menú al pasar el mouse por encima */
+}
+
+.desplegable-menu li {
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.desplegable-menu li:hover {
+  background-color: #f1f1f1;
+}
+
