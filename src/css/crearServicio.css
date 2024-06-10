@@ -1,0 +1,56 @@
+/* Estilo para el contenedor principal */
+.image-upload {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #ddd;
+    padding: 20px;
+    border-radius: 15px;
+    width: 200px;
+    height: 250px;
+    background-color: #f0f0f0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Estilo para la imagen */
+.image-upload img {
+    width: 10rem;
+    height: 10rem;
+    margin-bottom: 10px;
+}
+
+/* Estilo para el botón de descarga */
+.download-icon {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 10px;
+}
+
+.download-icon:hover {
+    background-color: #45a049;
+}
+
+.download-icon:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(66, 153, 225, 0.6);
+}
+
+/* Estilo para el logo dentro del botón */
+.download-icon .logo {
+    width: 5rem; /* Ajusta el tamaño según sea necesario */
+    height: 5rem; /* Ajusta el tamaño según sea necesario */
+}
+
