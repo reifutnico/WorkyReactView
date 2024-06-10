@@ -3,6 +3,7 @@ import Logo from './logo';
 import Desplegable from './Desplegable';
 import imgLogo from '../vendor/logo.png'; 
 import '../css/header.css';
+<link href='https://fonts.googleapis.com/css?family=Abhaya Libre' rel='stylesheet'></link>
 
 const Header = () => {
   return (
@@ -11,11 +12,11 @@ const Header = () => {
         <Logo destino="#Index" img={imgLogo} />
       </div>
       <div className='desplegable'>
-        <Desplegable texto="Hogar" />
-        <Desplegable texto="Educación" />
-        <Desplegable texto="Consultoría" />
-        <Desplegable texto="Diseño" />
-        <Desplegable texto="Desarrollo personal" />
+        <Desplegable texto="hogar" />
+        <Desplegable texto="educación" />
+        <Desplegable texto="consultoría" />
+        <Desplegable texto="diseño" />
+        <Desplegable texto="desarrollo personal" />
       </div>
     </header>
   );
